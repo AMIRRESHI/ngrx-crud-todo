@@ -6,6 +6,7 @@ import { Select, Store } from '@ngxs/store';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import { SetSelectedTodo, UpdateTodo, AddTodo } from '../state/actions/todo.actions';
+import { RouterSelectors } from '../state/router/router.selectors';
 
 @Component({
   selector: 'app-form',
@@ -16,8 +17,9 @@ export class FormComponent implements OnInit {
   @Select(TodoState.getSelectedTodo) selectedTodo: Observable<Todo>;
   todoForm: FormGroup;
   editTodo = false;
+  @Select(RouterSelectors.url) best;
 
-  constructor(private fb: FormBuilder, private store: Store) {
+  constructor(private fb: FormBuilder, private store: Store, private router: Router) {
     this.createForm();
   }
   createForm() {
@@ -44,6 +46,8 @@ export class FormComponent implements OnInit {
       } else {
           this.editTodo = false;
       }
+
+  
   });
   }
 
@@ -62,6 +66,12 @@ export class FormComponent implements OnInit {
   clearForm() {
     this.todoForm.reset();
     this.store.dispatch(new SetSelectedTodo(null));
+    this.router.navigate
+    this.router.navigate(['/list']);
+}
+
+canDeactivate(): Promise<boolean> | boolean {
+    return true;
 }
 
 }

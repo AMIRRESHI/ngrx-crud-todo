@@ -296,24 +296,31 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
-"@ngxs/devtools-plugin@^3.4.3-dev.master-942a9c9":
-  version "3.4.3-dev.master-942a9c9"
-  resolved "https://registry.yarnpkg.com/@ngxs/devtools-plugin/-/devtools-plugin-3.4.3-dev.master-942a9c9.tgz#29df0df7c69fd1e3507678f533eb35fd246e1a01"
-  integrity sha512-b7/yBvBLCMshBsVJ7MZVgA990o/zQmaCRXyShxqRT2FKONKHXJE7kZTbyWM1Qr82QskP2FX8hGSTE/TQSqC4pA==
+"@ngxs/devtools-plugin@^3.4.3-dev.master-df3902e":
+  version "3.4.3-dev.master-df3902e"
+  resolved "https://registry.yarnpkg.com/@ngxs/devtools-plugin/-/devtools-plugin-3.4.3-dev.master-df3902e.tgz#cfd4f94fdc0358ecd8537daf6fdf133bac4269c5"
+  integrity sha512-z0FnbsQ2ItlA07+TCs0bjXaK00By7qQKBEr7pJDtLQsg6Fyq3vlNUmRhiRgKbvMJbORyH0U7LC8CVLuBX+YjOg==
   dependencies:
     tslib "^1.9.0"
 
-"@ngxs/logger-plugin@^3.4.3-dev.master-942a9c9":
-  version "3.4.3-dev.master-942a9c9"
-  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-3.4.3-dev.master-942a9c9.tgz#48898f1a7f89c278ad4a5dd04789048f2e50ae74"
-  integrity sha512-qBPquJV+5qnnVND3cvgN4E6kJVun8hakq7dBw5hl2BYXKFc3S3EptyizToxckm8uNLrxZlm/yTtJiGoR4KbL7A==
+"@ngxs/logger-plugin@^3.4.3-dev.master-df3902e":
+  version "3.4.3-dev.master-df3902e"
+  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-3.4.3-dev.master-df3902e.tgz#3951ecc429ffacc2d2fbeb2fbd0b761fbf58ee2a"
+  integrity sha512-9Wh9wqfekyT04Y0X5lB2x90FMUCwDiNJCiDEWI3yYH20TMMvHtTaAu6N8e5qOLwJ7PNOzKJNKpDiBsmu+kguGQ==
   dependencies:
     tslib "^1.9.0"
 
-"@ngxs/store@^3.4.3-dev.master-942a9c9":
-  version "3.4.3-dev.master-942a9c9"
-  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.4.3-dev.master-942a9c9.tgz#1cc23e68b884a786102558be6097bd0ae0bada18"
-  integrity sha512-z8Fss7uH2M77Fe6CVokh8EdE2N3Ujw/BzaNrfAahhuNZ1IwUWElJd0EsEYMnK1rw5RvMBSFJPUdW8EceSiMCvw==
+"@ngxs/router-plugin@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@ngxs/router-plugin/-/router-plugin-3.4.3.tgz#60cea34d7165053bee2454b2baa57f6fc9af6975"
+  integrity sha512-DsWh5h9P8PGcgQbYEhbsozkoa/LpMH+v/JV+GMHraTV5rBKWn7kp0vaKszOoEcaoP9x1Gy+bUfvnJpbvZ/CEUw==
+  dependencies:
+    tslib "^1.9.0"
+
+"@ngxs/store@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.4.3.tgz#cf2f3b95e6be814742754c7f24e53b2b6392bb47"
+  integrity sha512-pVwxFxCxr09+zL37ot1hf6EhgpftNLSAseBZwHUlx40x2qAT+jat8XJlj4j0p+BoVEjlaVZn8zE6qMm2oSPlZw==
   dependencies:
     tslib "^1.9.0"
 
