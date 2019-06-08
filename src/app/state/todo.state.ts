@@ -31,6 +31,7 @@ export class TodoState {
     }
 
     @Action(GetTodos)
+    //another wayout
     // getTodos(ctx: StateContext<TodoStateModel>, action: GetTodos){
         
     //     return this.todoService.fetchTodos().pipe(
@@ -61,6 +62,7 @@ export class TodoState {
 
     @Action(AddTodo)
     addTodo({getState, patchState}: StateContext<TodoStateModel>, {payload}: AddTodo) {
+        console.log("AddTodo value is: ", this.todoService.addTodo(payload) )
         return this.todoService.addTodo(payload).pipe(tap((result) => {
             const state = getState();
             patchState({

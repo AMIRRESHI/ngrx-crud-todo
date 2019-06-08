@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
   @Select(TodoState.getSelectedTodo) selectedTodo: Observable<Todo>;
   todoForm: FormGroup;
   editTodo = false;
-  @Select(RouterSelectors.url) best;
+  @Select(RouterSelectors.url) test;
 
   constructor(private fb: FormBuilder, private store: Store, private router: Router) {
     this.createForm();
@@ -47,7 +47,9 @@ export class FormComponent implements OnInit {
           this.editTodo = false;
       }
 
-  
+      
+
+      console.log('the url is formcomp: ', this.test.url, this.test.params)
   });
   }
 
